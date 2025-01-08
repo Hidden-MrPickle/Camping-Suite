@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "montserrat";
+  src: url("./fonts/static/Montserrat-Light.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+h1.easeText.header {
+  position: absolute;
+  display: block;
+  width: 30%;
+  margin-top: 8%;
+  font-weight: 700;
+  font-size: 80px;
+  text-align: center;
+  text-wrap: wrap;
+  z-index: 1;
+}
+p.easeText.description {
+  text-align: center;
+  display: block;
+  margin-top: 8%;
+  width: 20%;
+  position: absolute;
+  right: 8%;
+  text-wrap: wrap;
+  z-index: 1;
+  font-size: 20px;
+}
+
+.frontImage {
+  width: 100%;
+  height: 200vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  perspective: 500px;
+  overflow: hidden;
+  text-align: center;
+}
+img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  object-position: center center;
+}
+.container {
+  position: absolute;
+}
+.animation.wraper {
+  background-image: url("./img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: 3;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
